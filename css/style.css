@@ -1,1 +1,171 @@
+body {
+  margin: 0px 0px 0px 0px;
+  background-color: #ffffad;
+  }
 
+/****************   Nav Section **********************/
+nav {
+  display: flex;
+	background-color: rgb(243, 183, 55);
+  color: #ffffad;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(243, 183, 55);
+  text-decoration-color: rgb(70, 30, 2);
+  /**color: rgb(0, 3, 6);**/
+  unicode-bidi: isolate;
+}
+
+.linkedon-icon {
+  width: 10px;
+  height: 10px;
+  transition: opacity 0.3s;
+}
+
+/*********** Splash Page ************************/
+header {
+  background-color: #ffffad;
+}
+
+header h1 {
+  font-family: cursive;
+  color: rgb(243, 183, 55);
+  text-align: center;
+}
+
+header img {
+  display: block;
+  border: 0ex;
+  border-radius: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.address {
+  font-style: italic;
+  text-align: center;
+}
+
+.tagline {
+  font-style: italic;
+  text-align: center;
+}
+
+/************* Sections ********************/
+hr {
+  border: none;
+  border-top: 2px solid rgb(243, 183, 55);
+  margin: 20px 0;
+  width: 50%;
+
+}
+
+section {
+  margin: 0 auto 0 auto;
+  max-width: 60%;
+}
+
+section h3 {
+  color:color-mix(in hsl longer hue, rgb(0, 0, 0) 50%, purple 50%);
+  font-family: fantasy;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: (2, 1fr);
+  grid-gap: 12px;
+  text-align: left;
+
+}
+
+section ul {
+  list-style-type: square;
+}
+
+section a {
+  color: rgb(243, 183, 55);
+  text-decoration: none;
+}
+
+section a:hover {
+  color: rgb(138, 127, 255);
+}
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card img {
+  width: 200px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card {
+  padding: 10px;
+  background-color: rgb(243, 183, 55);
+  box-shadow: rgb(1, 1, 71);
+  border-radius: 10px;
+  outline: 1px solid rgb(0, 49, 139);
+  font-style: italic;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  align-items: center;
+  unicode-bidi: isolate;
+}
+
+
+input {
+  border: 1px solid rgb(1, 1, 71);
+  border-radius: 10px;
+  line-height: 0.75;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  padding: 10px;
+}
+
+textarea {
+  border: 1px solid rgb(1, 1, 71);
+  border-radius: 10px;
+  line-height: 0.8;
+  vertical-align: top;
+
+ /** resize: vertical; **/
+ /** min-height: 32px; **/
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  padding: 10px; 
+  box-sizing: border-box;
+}
